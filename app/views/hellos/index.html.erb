@@ -1,3 +1,8 @@
-<h1>Hellos controller, index action</h1>
-
-<p>Edit this file in <tt>app/views/hellos/index.html.erb</tt></p>
+<h1>Hellos</h1>
+<ul>
+<% @hellos.each do |h| %>
+<li>
+  <%= h.say_hello %>
+</li>
+<% end %>
+</ul>
